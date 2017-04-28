@@ -1,6 +1,5 @@
 package com.webapp.security.controller;
 
-import com.alibaba.fastjson.JSONObject;
 import com.webapp.security.model.User;
 import com.webapp.security.service.UserService;
 import com.webapp.util.ResponseUtil;
@@ -42,10 +41,10 @@ public class UserController {
 
     @RequestMapping("/delete")
     public void delete(@RequestParam(value = "id") String id, HttpServletResponse response) throws Exception {
-        JSONObject result = new JSONObject();
+      /*  JSONObject result = new JSONObject();
         userService.delete(Integer.parseInt(id));
         result.put("success", true);
-        ResponseUtil.write(result, response);
+        ResponseUtil.write(result, response);*/
     }
 
     @RequestMapping("/save")
